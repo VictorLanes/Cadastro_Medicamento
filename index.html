@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Medicamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Medicamentos</h1>
+        <form id="medForm">
+            <label for="nome">Nome do Medicamento:</label>
+            <input type="text" id="nome" required>
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required>
+            <label for="dias">Quantidade de Dias:</label>
+            <input type="number" id="dias" min="1" required>
+            <button type="submit">Cadastrar Medicamento</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Medicamentos Cadastrados</h2>
+        <ul id="medList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
